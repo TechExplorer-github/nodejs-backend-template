@@ -46,6 +46,13 @@ app.use(cors());
 app.use(express.json());
 
 /**
+ * Health Check Route
+ */
+app.get("/health", (req, res) => {
+  res.status(200).json({ status: "OK" });
+});
+
+/**
  * Server Activation
  */
 app.listen(PORT, () => {
