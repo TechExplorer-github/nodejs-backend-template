@@ -74,6 +74,7 @@ docker compose up -d
 backend と db の疎通確認は、backend のコンテナに入って DB 接続を行う
 
 ```sh
+apt-get update
 apt-get install -y default-mysql-client
 mysql -h db -u test -ppassword test_database
 ```
