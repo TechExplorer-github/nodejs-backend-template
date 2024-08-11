@@ -12,9 +12,9 @@ services:
     depends_on:
       - db
     ports:
-      - 8000:8000
+      - 7001:7001
     volumes:
-      - ../src:/app
+      - ../:/app
     networks:
       - backend
 
